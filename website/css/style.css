@@ -1,0 +1,225 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #2269b0;
+    animation-name: meow;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes meow{
+    0% {background-color: #2269b0;}
+    20% {background-color: cadetblue;}
+    40% {background-color: blanchedalmond;}
+    60% {background-color:goldenrod;}
+}
+
+
+header{
+    position: sticky;
+    top: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.headerContainer{
+    display: flex;
+    align-items: center;
+    padding:10px;;
+    background-color: #113d5c;
+}
+.headerContainer img{
+    margin-right: 50px;
+}
+
+.headerContainer nav{
+    display: flex;
+    gap: 25px;
+    font-size: larger;
+}
+
+.headerContainer nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.informatieContainer{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.informatieContainer h1{
+    font-size: xx-large;
+    text-align: center;
+}
+
+.informatieContainer p{
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: large;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.imageContainer{
+    width: 100%;
+    height: 500px;
+    background-image: url(../images/image1.png);
+    background-size:cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.docentenContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.docentenContainer h1{
+    font-size: xx-large;
+    text-align: center;
+}
+
+.docentenContainer p{
+    font-size: large;
+    display: flex;
+    text-align: center;
+}
+
+.docentenContainer ul{
+    height: auto;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    
+}
+
+.docentenContainer li{
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 200px;
+}
+
+.docentenContainer img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+
+.roosterContainer{
+    margin-top: 70px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.roosterContainer h1{
+    font-size: xx-large;
+    text-align: center;
+}
+
+.roosterContainer p{
+    font-size: large;
+}
+
+.roosterContainer img{
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.imageContainer2{
+    width: 100%;
+    height: 500px;
+    background-image: url(../images/image2.png);
+    background-size:cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+.versnellenContainer{
+    margin-bottom: 20px;
+    background-color:darkseagreen;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.versnellenContainer img{
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 100%;
+}
+
+.vakantieContainer{
+    margin-bottom: 20px;
+    background-color:darkseagreen;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footerContainer{
+    background-color: #113d5c;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    width: 100%;
+    margin-top: 20px;
+    font-size: large;
+}
+
+@media (max-width:768px) {
+    
+    body{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 768px;
+    }
+    .headerContainer{
+        height: 100px;
+    }
+
+    .headerContainer nav{
+        display:block;
+        padding: 10px;
+        margin-left: 20px;
+        font-size: smaller;
+    }
+
+    .docentenContainer ul{
+        display: inline-grid;
+        gap:20px;
+        padding: 0px;
+    }
+
+    .informatieContainer{
+        margin-left: 0;
+    }
+
+    .docentenContainer li{
+        
+    }
+}
